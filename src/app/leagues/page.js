@@ -62,7 +62,7 @@ export default function Page() {
 
       {Object.keys(data).length > 0 ? (
         <>
-          <div className="mx-auto mb-10 max-w-lg rounded overflow-hidden shadow-md shadow-red-800">
+          <div className="mx-5 md:mx-auto mb-10 max-w-lg rounded overflow-hidden shadow-md shadow-red-800">
             <Image
               className="mx-auto mt-5"
               src={"/" + league + ".png"}
