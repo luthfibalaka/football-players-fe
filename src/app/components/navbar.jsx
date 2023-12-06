@@ -34,7 +34,7 @@ export default function Navbar() {
 
             {/* Left Nav */}
             <div className="hidden items-center space-x-1 md:flex">
-              <Link className={linkStyleDesktop} href="#">
+              <Link className={linkStyleDesktop} href="/name">
                 Search Players
               </Link>
               <Link className={linkStyleDesktop} href="#">

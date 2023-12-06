@@ -39,7 +39,7 @@ export default function Page() {
           id="club"
           name="club"
           autoComplete="club-name"
-          className="block m-5 w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-red-300 focus:ring-2 focus:ring-inset focus:ring-red-800 sm:max-w-xs sm:text-sm sm:leading-6"
+          className="p-3 m-5 w-full rounded-md shadow shadow-red-800 sm:max-w-xs"
         >
           <option value={"WestHam"}>West Ham</option>
           <option value={"OGCNice"}>OGC Nice</option>
@@ -108,7 +108,7 @@ export default function Page() {
                     className="mx-auto mb-3 max-w-sm rounded overflow-hidden shadow"
                   >
                     <Link href={"/details/" + datum.split("#")[1]}>
-                    <div className="px-6 py-4 hover:bg-red-800 hover:text-white duration-300 cursor-pointer">
+                    <div className="px-6 shadow-xl py-4 hover:bg-red-800 hover:text-white duration-300 cursor-pointer">
                         <span>{i + 1}. {data[datum]}</span>
                     </div>
                     </Link>

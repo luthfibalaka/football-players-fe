@@ -24,7 +24,7 @@ export default function Page() {
             </p>
           </div>
           <div className="mt-16 grid divide-x divide-y overflow-hidden  rounded-3xl sm:grid-cols-2 lg:grid-cols-4  lg:divide-y-0 xl:grid-cols-4 mb-5">
-            <Link href={"/#"} className="group relative bg-gray-50 transition hover:z-[1] hover:shadow-2xl hover:scale-105 duration-300">
+            <Link href={"/name"} className="group relative bg-gray-50 transition hover:z-[1] hover:shadow-2xl hover:scale-105 duration-300">
               <div className="relative space-y-8 py-12 p-8">
                 <Image
                   src={"/name.svg"}
@@ -60,7 +60,7 @@ export default function Page() {
                 </div>
               </div>
             </Link>
-            <Link href={"/#"} className="group relative bg-gray-50 transition hover:z-[1] hover:shadow-2xl hover:scale-105 duration-300">
+            <Link href={"/clubs"} className="group relative bg-gray-50 transition hover:z-[1] hover:shadow-2xl hover:scale-105 duration-300">
               <div className="relative space-y-8 py-12 p-8">
                 <Image
                   src={"/club.svg"}

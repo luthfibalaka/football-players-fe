@@ -40,16 +40,16 @@ export default function Page({ params }) {
               Name: {data.name}
             </h2>
             <h2 className="text-md shadow rounded p-3 mb-2 hover:text-white hover:bg-red-800 duration-300">
-              Full Name: {data.full_name}
+              Full Name: {data.full_name ? data.full_name : "No Information"}
             </h2>
             <h2 className="text-md shadow rounded p-3 mb-2 hover:text-white hover:bg-red-800 duration-300">
               Place of Birth:{" "}
               <a
                 target="_blank"
-                href={"https://dbpedia.org/page/" + data.place_of_birth}
+                href={data.place_of_birth ? "https://dbpedia.org/page/" + data.place_of_birth : "#"}
                 className="text-blue-800 underline"
               >
-                {data.place_of_birth}↗
+                {data.place_of_birth ? data.place_of_birth + "↗" : "No Information"}
               </a>
             </h2>
             <h2 className="text-md shadow rounded p-3 mb-2 hover:text-white hover:bg-red-800 duration-300">
@@ -59,47 +59,47 @@ export default function Page({ params }) {
                 href={"https://dbpedia.org/page/" + data.nationality}
                 className="text-blue-800 underline"
               >
-                {data.nationality}↗
+                {data.nationality ? data.nationality + "↗" : "No Information"}
               </a>
             </h2>
             <h2 className="text-md shadow rounded p-3 mb-2 hover:text-white hover:bg-red-800 duration-300">
-              Age: {data.age} years old
+              Age: {data.age ? data.age + " years old" : "No Information"}
             </h2>
             <h2 className="text-md shadow rounded p-3 mb-2 hover:text-white hover:bg-red-800 duration-300">
-              Height: {data.height} m
+              Height: {data.height ? data.height + " m" : "No Information"}
             </h2>
             <h2 className="text-md shadow rounded p-3 mb-2 hover:text-white hover:bg-red-800 duration-300">
               Language:{" "}
               <a
                 target="_blank"
-                href={"" + data.language_iri}
+                href={data.language_iri ? "" + data.language_iri : "#"}
                 className="text-blue-800 underline"
               >
-                {data.languaged_used}↗
+                {data.languaged_used ? data.languaged_used + "↗" : "No Information"}
               </a>
             </h2>
             </div>
             <h1 className="text-xl">Professional Careers</h1>
             <h2 className="text-md shadow rounded p-3 mb-2 hover:text-white hover:bg-red-800 duration-300">
-              Current Price: {data.price} million (Max: {data.max_price} million)
+              Current Price: {data.price ? data.price + " million $" : "Unknown"} (Max: {data.max_price ? data.max_price + " million $" : "Unknown"})
             </h2>
             <h2 className="text-md shadow rounded p-3 mb-2 hover:text-white hover:bg-red-800 duration-300">
-              Current Club: {data.club}
+              Current Club: {data.club ? data.club : "No Information"}
             </h2>
             <h2 className="text-md shadow rounded p-3 mb-2 hover:text-white hover:bg-red-800 duration-300">
-              Joined Club Date: {data.joined_club}
+              Joined Club Date: {data.joined_club ? data.joined_club : "No Information"}
             </h2>
             <h2 className="text-md shadow rounded p-3 mb-2 hover:text-white hover:bg-red-800 duration-300">
-              Contract Expiration Date: {data.contract_expires}
+              Contract Expiration Date: {data.contract_expires ? data.contract_expires : "No Information"}
             </h2>
             <h2 className="text-md shadow rounded p-3 mb-2 hover:text-white hover:bg-red-800 duration-300">
-              Shirt Num: {data.shirt_num}
+              Shirt Num: {data.shirt_num ? data.shirt_num : "No Information"}
             </h2>
             <h2 className="text-md shadow rounded p-3 mb-2 hover:text-white hover:bg-red-800 duration-300">
-              Position: {data.position}
+              Position: {data.position ? data.position : "No Information"}
             </h2>
             <h2 className="text-md shadow rounded p-3 mb-2 hover:text-white hover:bg-red-800 duration-300">
-              League: {data.league}
+              League: {data.league ? data.league : "No Information"}
             </h2>
             <h2 onClick={() => {setShowDetail(!showDetail)}} className="cursor-pointer text-md shadow rounded p-3 mb-2 hover:text-white hover:bg-red-800 duration-300">
               <span>{showDetail ? data.league_description : "Click to get the description of " + data.league}</span>
