@@ -32,7 +32,7 @@ export default function Page() {
                   width={200}
                   height={200}
                 />
-                <div className="space-y-2">
+                <div className="space-y-2 text-center">
                   <h5 className="text-xl font-semibold">
                     Search Players
                   </h5>
@@ -99,64 +99,6 @@ export default function Page() {
           </div>
         </div>
       </main>
-
-      {/* <div className="relative">
-          <Image
-            className="h-auto max-w-full md:rounded-lg brightness-50"
-            src={'/player_solid.png'}
-            alt={'Players discussing before a game!'}
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: '100%', height: 'auto' }}
-          />
-          <div className="absolute bottom-1/2 w-full bg-gray-500/50 px-4 py-3">
-            <h1 className="text-5xl font-semibold text-white">
-              Welcome to Football Players Hub!
-            </h1>
-            <p className="text-gray-200">
-              I love kittens very much. They are amazing.
-            </p>
-          </div>
-        </div>
-        <div className="grid grid-cols-5 gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
-              alt=""
-            />
-          </div>
-        </div> */}
-      {/* </main> */}
       <Footer />
     </>
   );
