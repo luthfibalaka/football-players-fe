@@ -37,7 +37,7 @@ export default function Navbar() {
               <Link className={linkStyleDesktop} href="/name">
                 Search Players
               </Link>
-              <Link className={linkStyleDesktop} href="#">
+              <Link className={linkStyleDesktop} href="/positions">
                 Positions
               </Link>
               <Link className={linkStyleDesktop} href="/clubs">

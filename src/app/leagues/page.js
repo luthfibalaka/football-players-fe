@@ -63,13 +63,12 @@ export default function Page() {
       {Object.keys(data).length > 0 ? (
         <>
           <div className="mx-5 md:mx-auto mb-10 max-w-lg rounded overflow-hidden shadow-md shadow-red-800">
-            <Image
-              className="mx-auto mt-5"
-              src={"/" + league + ".png"}
-              alt={"Logo of the league"}
-              width={200}
-              height={200}
-            />
+          <Image
+            src={"/league.svg"}
+            className="mx-auto my-3"
+            alt={"Name"}
+            width={100}
+            height={100} />
             <div className="px-6 py-4 max-h-96 overflow-y-scroll">
               <div className="text-lg mb-2 text-center">
                 Select any of these players to know more!

@@ -42,7 +42,7 @@ export default function Page() {
                 </div>
               </div>
             </Link>
-            <Link href={"/#"} className="group relative bg-gray-50 transition hover:z-[1] hover:shadow-2xl hover:scale-105 duration-300">
+            <Link href={"/positions"} className="group relative bg-gray-50 transition hover:z-[1] hover:shadow-2xl hover:scale-105 duration-300">
               <div className="relative space-y-8 py-12 p-8">
                 <Image
                   src={"/position.svg"}
