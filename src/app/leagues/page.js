@@ -3,6 +3,8 @@ import Navbar from "../components/navbar";
 import Image from "next/image";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Footer from "../components/footer";
+import Link from "next/link";
 
 export default function Page() {
   const nonChosenClass =
@@ -78,11 +80,11 @@ export default function Page() {
                     key={datum}
                     className="mx-auto mb-3 max-w-sm rounded overflow-hidden shadow"
                   >
-                    <div className="px-6 py-4 hover:bg-red-600 duration-300 cursor-pointer">
-                      <p className="text-gray-700">
+                    <Link href={"/details/" + datum.split("#")[1]}>
+                    <div className="px-6 py-4 hover:bg-red-800 hover:text-white duration-300 cursor-pointer">
                         <span>{i + 1}. {data[datum]}</span>
-                      </p>
                     </div>
+                    </Link>
                   </div>
                 );
               })}
@@ -94,6 +96,7 @@ export default function Page() {
           <p>Loading...</p>
         </div>
       )}
+      <Footer />
     </div>
   );
 }
