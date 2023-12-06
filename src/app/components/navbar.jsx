@@ -40,7 +40,7 @@ export default function Navbar() {
               <Link className={linkStyleDesktop} href="#">
                 Positions
               </Link>
-              <Link className={linkStyleDesktop} href="#">
+              <Link className={linkStyleDesktop} href="/clubs">
                 Clubs
               </Link>
               <Link className={linkStyleDesktop} href="/leagues">
@@ -79,14 +79,14 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={"" + (expanded ? "block md:hidden" : "hidden")}>
+      <div className={"" + (expanded ? "block md:hidden border-b-2 border-red-800" : "hidden")}>
         <Link href={"#"} className="block px-4 py-3 text-lg">
           Search Players
         </Link>
         <Link href={"#"} className="block px-4 py-3 text-lg">
           Positions
         </Link>
-        <Link href={"#"} className="block px-4 py-3 text-lg">
+        <Link href={"/clubs"} className="block px-4 py-3 text-lg">
           Clubs
         </Link>
         <Link href={"/leagues"} className="block px-4 py-3 text-lg">
